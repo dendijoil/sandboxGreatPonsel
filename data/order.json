@@ -1,0 +1,12 @@
+[
+  {
+    "UserId": 3,
+    "ProductId": 1,
+    "status": "Paid"
+  },
+  {
+    "UserId":3,
+    "ProductId":2,
+    "status":"Unpaid"
+  }
+]

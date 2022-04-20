@@ -1,0 +1,20 @@
+[
+  {
+    "username": "admin",
+    "email": "admin@greatponsel.com",
+    "password": "admin12345",
+    "role": "admin"
+  },
+  {
+    "username":"user",
+    "email": "user@greatponsel.com",
+    "password": "user12345",
+    "role": "user"
+  },
+  {
+    "username": "defa",
+    "email": "defa@greatponsel.com",
+    "password":"defa12345",
+    "role": "user"
+  }
+]

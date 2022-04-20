@@ -1,0 +1,23 @@
+[
+  {
+    "name": "admin",
+    "dateOfBirth": "2000-04-14",
+    "phoneNumber":"08888888",
+    "gender":"male",
+    "UserId": 1
+  },
+  {
+    "name": "user",
+    "dateOfBirth": "2001-04-24",
+    "phoneNumber":"088881238",
+    "gender":"female",
+    "UserId": 2
+  },
+  {
+    "name": "Dafa Dendi Fai",
+    "dateOfBirth":"1996-08-17",
+    "phoneNumber":"0855475421",
+    "gender":"male",
+    "UserId": 3
+  }
+]
