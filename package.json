@@ -1,0 +1,30 @@
+{
+  "name": "sandboxgreatponsel",
+  "version": "1.0.0",
+  "description": "WebApp yang menjual smartphone dengan harga bintang 5 kualitas kaki 5",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dendijoil/sandboxGreatPonsel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dendijoil/sandboxGreatPonsel/issues"
+  },
+  "homepage": "https://github.com/dendijoil/sandboxGreatPonsel#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "pg": "^8.7.3",
+    "sequelize": "^6.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "sequelize-cli": "^6.4.1"
+  }
+}

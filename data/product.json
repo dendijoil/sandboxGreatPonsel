@@ -5,7 +5,7 @@
     "price": "5999000",
     "stock": "10",
     "image": "https://www.theiphonewiki.com/wiki/File:IPhone_X.png",
-    "CategoryId": "1"
+    "BrandId": "1"
   },
   {
     "name": "iPhone 11 - 64GB",
@@ -13,7 +13,7 @@
     "price": "7999000",
     "stock": "5",
     "image": "https://www.theiphonewiki.com/w/images/thumb/4/47/IPhone_11.png",
-    "CategoryId": "1"
+    "BrandId": "1"
   },
   {
     "name": "iPhone 12 - 256GB",
@@ -21,7 +21,7 @@
     "price": "14999000",
     "stock": "5",
     "image": "https://www.theiphonewiki.com/w/images/thumb/3/3a/IPhone_12.jpg",
-    "CategoryId": "1"
+    "BrandId": "1"
   },
   {
     "name": "iPhone 13 - 256GB",
@@ -29,7 +29,7 @@
     "price": "16499000",
     "stock": "5",
     "image": "https://www.theiphonewiki.com/w/images/thumb/3/37/IPhone_13.png",
-    "CategoryId": "1"
+    "BrandId": "1"
   },
   {
     "name":"Xiaomi Poco F3 - 128GB",
@@ -37,7 +37,7 @@
     "price": "4999000",
     "stock": "20",
     "image": "https://cf.shopee.co.id/file/0a19874aec1ee0cccf89473459ca2030",
-    "CategoryId": "2"
+    "BrandId": "2"
   },
   {
     "name": "Xiaomi 11T - 256GB",
@@ -45,7 +45,7 @@
     "price": "5999000",
     "stock": "3",
     "image": "https://www.zonagadget.co.id/wp-content/uploads/2021/09/xiaomi-11t-1.jpg",
-    "CategoryId": "2"
+    "BrandId": "2"
   },
   {
     "name": "Xiaomi Poco X3 GT - 256GB",
@@ -53,7 +53,7 @@
     "price": "4799000",
     "stock": "7",
     "image": "https://i01.appmifile.com/webfile/globalimg/id/cms/4DA61242-620E-0EFD-F628-534C30D62A88.jpg",
-    "CategoryId": "2"
+    "BrandId": "2"
   },
   {
     "name": "Galaxy S22 Ultra - 256GB",
@@ -61,7 +61,7 @@
     "price": "20999000",
     "stock": "4",
     "image": "https://images.samsung.com/levant/smartphones/galaxy-s22-ultra/buy/S22_Ultra_ProductKV_Black_MO.jpg",
-    "CategoryId": "3"
+    "BrandId": "3"
   },
   {
     "name": "Galaxy S22+ - 128GB",
@@ -69,7 +69,7 @@
     "price": "14999000",
     "stock": "5",
     "image": "https://cdn.eraspace.com/pub/media/catalog/product/g/a/galaxy_s22_green_1_1_2_1.jpg",
-    "CategoryId": "3"
+    "BrandId": "3"
   },
   {
     "name": "Galaxy S21 Ultra - 256GB",
@@ -77,7 +77,7 @@
     "price": "19999000",
     "stock": "7",
     "image": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s21-ultra-5g-1.jpg",
-    "CategoryId": "3"
+    "BrandId": "3"
   },
   {
     "name": "OPPO Reno 7 Z - 128GB",
@@ -85,7 +85,7 @@
     "price": "5999000",
     "stock": "50",
     "image": "https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/03/06/2708877181.jpg",
-    "CategoryId": "4"
+    "BrandId": "4"
   },
   {
     "name": "OPPO A96 - 256GB",
@@ -93,7 +93,7 @@
     "price": "4299000",
     "stock": "7",
     "image": "https://carisinyal.com/wp-content/uploads/2022/01/OPPO-A96_.webp",
-    "CategoryId": "4"
+    "BrandId": "4"
   },
   {
     "name": "OPPO A76 - 128GB",
@@ -101,7 +101,7 @@
     "price": "3408999",
     "stock": "50",
     "image": "https://cdn.eraspace.com/pub/media/catalog/product/o/p/oppo_a76_6-128gb_-_black_6.jpg",
-    "CategoryId": "4"
+    "BrandId": "4"
   },
   {
     "name": "Realme X3 Superzoom - 256GB",
@@ -109,7 +109,7 @@
     "price": "6599000",
     "stock": "5",
     "image": "https://cf.shopee.co.id/file/db5dc107c8ee302b327c7ad62e3752c7",
-    "CategoryId": "5"
+    "BrandId": "5"
   },
   {
     "name": "Realme 9 Pro - 128GB",
@@ -117,7 +117,7 @@
     "price": "3999000",
     "stock": "7",
     "image": "https://asset.kompas.com/crops/2W_GOq6JykpSs12RxR-flJcTECo=/32x0:1652x1080/750x500/data/photo/2022/02/16/620cbb53c7fd1.png",
-    "CategoryId": "5"
+    "BrandId": "5"
   },
   {
     "name": "Realme 8 Pro - 128GB",
@@ -125,7 +125,7 @@
     "price": "3699000",
     "stock": "10",
     "image": "http://static.bmdstatic.com/pk/product/large/60a47b57dde21.jpg",
-    "CategoryId": "5"
+    "BrandId": "5"
   },
   {
     "name": "Vivo Y21T - 128GB",
@@ -133,7 +133,7 @@
     "price": "3099000",
     "stock": "10",
     "image": "https://asset.kompas.com/crops/4B2-VNKwu7I_VEOaclFFZ-eaxiI=/117x67:920x602/750x500/data/photo/2022/01/02/61d10765bbb28.png",
-    "CategoryId": "6"
+    "BrandId": "6"
   },
   {
     "name": "Vivo Y76s - 128GB",
@@ -141,7 +141,7 @@
     "price": "3819000",
     "stock": "10",
     "image": "https://asset.kompas.com/crops/ddshoYtXiiuPfCskGhRBv7mFbl4=/21x84:829x623/750x500/data/photo/2021/11/11/618c828e43bb4.jpg",
-    "CategoryId": "6"
+    "BrandId": "6"
   },
   {
     "name": "Vivo X Fold - 256GB",
@@ -149,6 +149,6 @@
     "price": "24980000",
     "stock": "2",
     "image": "https://awsimages.detik.net.id/community/media/visual/2022/03/29/vivo-x-fold-1_43.jpeg?w=700&q=90",
-    "CategoryId": "6"
+    "BrandId": "6"
   }
 ]
