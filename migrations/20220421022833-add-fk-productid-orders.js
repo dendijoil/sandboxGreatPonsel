@@ -1,9 +1,10 @@
 'use strict';
 
 module.exports = {
-  up (queryInterface, Sequelize) {
+  up(queryInterface, Sequelize) {
     return queryInterface.addColumn('Orders', 'ProductId', {
       type: Sequelize.INTEGER,
+      allowNull: false,
       references: {
         model: {
           tableName: 'Products'
@@ -13,7 +14,7 @@ module.exports = {
     })
   },
 
-  down (queryInterface, Sequelize) {
+  down(queryInterface, Sequelize) {
     return queryInterface.removeColumn('Orders', 'ProductId')
   }
 };
