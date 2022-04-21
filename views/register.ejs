@@ -16,53 +16,55 @@
   <div style="margin-bottom: 100px; ">
     <%- include("./partials/navbar.ejs") %>
   </div>
-    <h2 style="text-align: center;" >Register Page</h2>
+  <h2 style="text-align: center;">Register Page</h2>
 
 
-    <% if(errors) { %>
-      <p style="color:red; text-align: center;"><%= errors %> </p>
-    <% } %> 
+  <% if(errors) { %>
+    <p style="color:red; text-align: center;">
+      <%= errors %>
+    </p>
+    <% } %>
 
-<div style="text-align: center;" >
+      <div style="text-align: center;">
 
-  <form action="/register" method="post">
-    <label>Username :</label><br>
-    <input type="text" name="username"><br><br>
-    <label>Email :</label><br>
-    <input type="email" name="email"><br><br>
-    <label>Password :</label><br>
-    <input type="password" name="password"><br><br>
-    <label for="">Role</label> <br>
-    <select name="role">
-      <option selected disabled>-- Select Role --</option>
-      <% role.forEach(el=> { %>
-        <option value="<%= el %>">
-          <%= el %>
-        </option>
-        <% }) %>
-    </select>
-    <br><br>
-    <label>Fullname :</label><br>
-    <input type="text" name="name"><br><br>
-    <label>Date Of Birth :</label><br>
-    <input type="date" name="dateOfBirth"><br><br>
-    <label>phone number :</label><br>
-    <input type="text" name="phoneNumber"><br><br>
-    <label for="">Gender</label> <br>
-    <select name="gender">
-      <option selected disabled>-- Select Gender --</option>
-      <% gender.forEach(el=> { %>
-        <option value="<%= el %>">
-          <%= el %>
-        </option>
-        <% }) %>
-    </select>
-    <br><br>
-    <label>Photo:</label><br>
-    <input type="text" name="photo"><br><br>
-    <input type="submit" value="Submit">
-  </form>
-</div>
+        <form action="/register" method="post">
+          <label>Username :</label><br>
+          <input type="text" name="username"><br><br>
+          <label>Email :</label><br>
+          <input type="email" name="email"><br><br>
+          <label>Password :</label><br>
+          <input type="password" name="password"><br><br>
+          <label for="">Role</label> <br>
+          <select name="role">
+            <option selected disabled>-- Select Role --</option>
+            <% role.forEach(el=> { %>
+              <option value="<%= el %>">
+                <%= el %>
+              </option>
+              <% }) %>
+          </select>
+          <br><br>
+          <label>Fullname :</label><br>
+          <input type="text" name="name"><br><br>
+          <label>Date Of Birth :</label><br>
+          <input type="date" name="dateOfBirth"><br><br>
+          <label>phone number :</label><br>
+          <input type="text" name="phoneNumber"><br><br>
+          <label for="">Gender</label> <br>
+          <select name="gender">
+            <option selected disabled>-- Select Gender --</option>
+            <% gender.forEach(el=> { %>
+              <option value="<%= el %>">
+                <%= el %>
+              </option>
+              <% }) %>
+          </select>
+          <br><br>
+          <label>Photo:</label><br>
+          <input type="text" name="photo"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
 </body>
 
 </html>

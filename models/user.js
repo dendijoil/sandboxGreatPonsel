@@ -8,17 +8,16 @@ const bcrypt = require('bcryptjs');
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
 
-
     static associate(models) {
       this.hasOne(models.Profile)
       this.belongsToMany(models.Product, { through: 'Orders', foreignKey: 'UserId' })
-      this.hasMany(models.Order , {foreignKey: 'UserId' , as : 'UserOrder'})
+      this.hasMany(models.Order, { foreignKey: 'UserId', as: 'UserOrder' })
       // Users.belongsToMany(models.Places, { through: 'Checkins', as: 'Checkins' })
       // User.belongsToMany(User, {
       //   through: models.Order,
       //   as: 'UserOrder',  // <--- unique alias name
       //   foreignKey: 'UserId',
-    // });
+      // });
     }
 
     static gender = [
@@ -40,10 +39,9 @@ module.exports = (sequelize, DataTypes) => {
           msg: 'Please input your username'
         },
         len: {
-          args: 4,
-          msg: 'username must be more than 4 character'
-        },
-        unique: true
+          args: [4, 15],
+          msg: 'Username must be between 4 and 15'
+        }
       }
     },
     email: {
@@ -52,10 +50,8 @@ module.exports = (sequelize, DataTypes) => {
       validate: {
         notEmpty: {
           msg: 'Please input your email'
-        },
-        unique: true,
-        isEmail: true,    
-      },
+        }
+      }
     },
     password: {
       type: DataTypes.STRING,
@@ -65,8 +61,8 @@ module.exports = (sequelize, DataTypes) => {
           msg: 'Please input your password'
         },
         len: {
-          args: [4, 255],
-          msg: 'password must be more than 4 character'
+          args: [4, 15],
+          msg: 'Password must be between 4 and 15'
         }
       }
     },
