@@ -7,58 +7,42 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       this.belongsTo(models.User)
     }
+
+    get age() {
+      let now = new Date().getFullYear()
+      let born = new Date(this.dateOfBirth).getFullYear();
+      return now - born
+    }
+
+    static convertedDate(value) {
+      const date = new Date(value)
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      return date.toLocaleDateString('id-ID', options)
+    }
+
+    get newDate() {
+      let ndate = new Date(this.dateOfBirth).toISOString().split('T')[0]
+      return ndate
+    }
   }
   Profile.init({
     name: {
       type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        notNull: {
-          msg: 'Please input your name'
-        },
-        notEmpty: {
-          msg: 'Please input your name'
-        }
-      }
     },
     dateOfBirth: {
       type: DataTypes.DATE,
-      allowNull: false,
-      validate: {
-        notNull: {
-          msg: 'Please input your dateOfBirth'
-        },
-        notEmpty: {
-          msg: 'Please input your dateOfBirth'
-        }
-      }
     },
     phoneNumber: {
       type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        notNull: {
-          msg: 'Please input your phoneNumber'
-        },
-        notEmpty: {
-          msg: 'Please input your phoneNumber'
-        }
-      }
     },
     gender: {
       type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        notNull: {
-          msg: 'Please select your gender'
-        },
-        notEmpty: {
-          msg: 'Please select your gender'
-        }
-      }
     },
     photo: DataTypes.STRING,
-    UserId: DataTypes.INTEGER
+    UserId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    } 
   }, {
     sequelize,
     modelName: 'Profile',

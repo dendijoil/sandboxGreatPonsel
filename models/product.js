@@ -7,6 +7,15 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       this.belongsTo(models.Brand)
       this.belongsToMany(models.User, { through: 'Orders', foreignKey: 'ProductId' })
+      this.hasMany(models.Order, {foreignKey: "ProductId" , as : 'UserOrder'})
+    }
+
+    newName() {
+      return this.name = `New ${this.name}`
+    }
+
+    get storageName(){
+      return `${this.storage}GB`
     }
   }
   Product.init({
@@ -89,6 +98,11 @@ module.exports = (sequelize, DataTypes) => {
     },
     BrandId: DataTypes.INTEGER
   }, {
+    hooks: {
+      beforeCreate(instance, options) {
+        instance.name = `${instance.name} - ${instance.storage}GB`
+      }
+    },
     sequelize,
     modelName: 'Product',
   });

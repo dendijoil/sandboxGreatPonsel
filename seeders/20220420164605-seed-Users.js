@@ -1,6 +1,7 @@
 'use strict';
 
 const fs = require('fs')
+const { hashPassword } = require('../helpers/bcrypt');
 
 module.exports = {
   up (queryInterface, Sequelize) {
@@ -8,6 +9,7 @@ module.exports = {
       let data = el
       el.createdAt = new Date()
       el.updatedAt = new Date()
+      el.password = hashPassword(el.password)
       return data
     })
     return queryInterface.bulkInsert('Users', users)

@@ -5,7 +5,8 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class Order extends Model {
     static associate(models) {
-      // define association here
+      this.belongsTo(models.User, { foreignKey: "UserId" , as : 'UserOrder' })
+      this.belongsTo(models.Product, { foreignKey: "ProductId" , as : 'ProductOrder' })
     }
   }
   Order.init({
@@ -15,6 +16,11 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'Order',
+    hooks: {
+      beforeCreate(instance, options){
+        instance.status = 'Unpaid'
+      }
+    }
   });
   return Order;
 };

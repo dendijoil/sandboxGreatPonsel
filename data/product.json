@@ -4,7 +4,7 @@
     "storage": "64",
     "price": "5999000",
     "stock": "10",
-    "image": "https://www.theiphonewiki.com/wiki/File:IPhone_X.png",
+    "image": "https://cdn.eraspace.com/pub/media/catalog/product/i/p/iphone-x-space-grey_2_3_4_1_3_2.jpg",
     "BrandId": "1"
   },
   {
@@ -12,7 +12,7 @@
     "storage": "64",
     "price": "7999000",
     "stock": "5",
-    "image": "https://www.theiphonewiki.com/w/images/thumb/4/47/IPhone_11.png",
+    "image": "https://cdn.eraspace.com/pub/media/catalog/product/a/p/apple_iphone_11_green_1_2_1_1_1_1.jpg",
     "BrandId": "1"
   },
   {
@@ -20,7 +20,7 @@
     "storage": "256",
     "price": "14999000",
     "stock": "5",
-    "image": "https://www.theiphonewiki.com/w/images/thumb/3/3a/IPhone_12.jpg",
+    "image": "https://cdn.eraspace.com/pub/media/catalog/product/i/p/iphone_12_purple_1_3.jpg",
     "BrandId": "1"
   },
   {
@@ -28,11 +28,11 @@
     "storage": "256",
     "price": "16499000",
     "stock": "5",
-    "image": "https://www.theiphonewiki.com/w/images/thumb/3/37/IPhone_13.png",
+    "image": "https://cdn.eraspace.com/pub/media/catalog/product/i/p/iphone_13_blue_1.jpg",
     "BrandId": "1"
   },
   {
-    "name":"Xiaomi Poco F3 - 128GB",
+    "name": "Xiaomi Poco F3 - 128GB",
     "storage": "128",
     "price": "4999000",
     "stock": "20",
@@ -97,7 +97,7 @@
   },
   {
     "name": "OPPO A76 - 128GB",
-    "storage":" 128",
+    "storage": " 128",
     "price": "3408999",
     "stock": "50",
     "image": "https://cdn.eraspace.com/pub/media/catalog/product/o/p/oppo_a76_6-128gb_-_black_6.jpg",
