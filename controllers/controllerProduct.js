@@ -1,6 +1,6 @@
 'use strict'
 
-const { Product, Brand , Order} = require('../models')
+const { Product, Brand, Order } = require('../models')
 const { priceToRupiah } = require('../helpers/formatter')
 const { Op } = require('sequelize');
 class ControllerProduct {
@@ -39,7 +39,7 @@ class ControllerProduct {
       })
       .then(brand => {
         let user = req.session.role
-        res.render("productList", { phones, user , priceToRupiah, brand })
+        res.render("productList", { phones, user, priceToRupiah, brand })
       })
       .catch(err => {
         console.log(err);
@@ -48,9 +48,10 @@ class ControllerProduct {
   }
 
   static get(req, res) {
+    const { errors } = req.query
     Brand.findAll()
       .then(brand => {
-        res.render('formAddPhone', { brand })
+        res.render('formAddPhone', { brand, errors })
       })
       .catch(err => {
         console.log(err);
@@ -66,8 +67,13 @@ class ControllerProduct {
         res.redirect('/products')
       })
       .catch(err => {
-        console.log(err);
-        res.send(err)
+        let listError = []
+        if (err.name === 'SequelizeValidationError') {
+          err.errors.forEach(el => {
+            listError.push(el.message)
+          });
+        }
+        res.redirect(`/products/add?errors=${listError}`)
       })
   }
 
@@ -123,13 +129,13 @@ class ControllerProduct {
       UserId: req.session.UserId,
       ProductId: req.params.id
     })
-    .then(() => {
-      Product.decrement('stock', {
-        where: {
-          id: req.params.id
-        }
+      .then(() => {
+        Product.decrement('stock', {
+          where: {
+            id: req.params.id
+          }
+        })
       })
-    })
       .then(() => {
         res.redirect("/products")
       })

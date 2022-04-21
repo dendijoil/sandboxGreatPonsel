@@ -23,9 +23,6 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        notNull: {
-          msg: 'Please input product name'
-        },
         notEmpty: {
           msg: 'Please input product name'
         }
@@ -35,9 +32,6 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       allowNull: false,
       validate: {
-        notNull: {
-          msg: 'Please input storage capacity'
-        },
         notEmpty: {
           msg: 'Please input storage capacity'
         },
@@ -50,9 +44,6 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       allowNull: false,
       validate: {
-        notNull: {
-          msg: 'Please input product price'
-        },
         notEmpty: {
           msg: 'Please input product price'
         },
@@ -69,9 +60,6 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       allowNull: false,
       validate: {
-        notNull: {
-          msg: 'Please input Stock'
-        },
         notEmpty: {
           msg: 'Please input Stock'
         },
@@ -88,9 +76,6 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        notNull: {
-          msg: 'Please input product image'
-        },
         notEmpty: {
           msg: 'Please input product image'
         }
